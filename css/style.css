@@ -48,12 +48,36 @@ ul{
     background: #fff;
     padding: 0 2rem;
     height: 0;
-    min-height: 40vh;
+    min-height: 10vh;
     overflow-x: hidden;
+    transition: height 1s ease-in-out;
 }
 
 .nav .nav-menu{
     justify-content: space-between;
+}
+
+.nav .toogle-collapse{
+    position: absolute;
+    top: 0;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toogle-collapse .toogle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.collapse{
+    height: 30rem;
+}
+
+.nav .toogle-collaps .toogle-icons i{
+    font-size: 1.4rem;
+    color: var(--text-gray);
 }
 
 .nav .nav-items{
@@ -101,7 +125,13 @@ ul{
 /*viewport less  then or equal to 750px*/
 
 @media only screen and (max-width:750px){
-    .nav{
-        background-color: black;
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toogle-collapse{
+        display: initial;
     }
 }
+
+/*-----x---viewport less  then or equal to 750px----x----*/
