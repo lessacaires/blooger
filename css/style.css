@@ -15,7 +15,7 @@ html, body{
     --midnight:#104f55;
 
     /* gradiente color */
-    --skk:linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --sky:linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 
     /*theme font-family*/
     --Abel: 'Abel', cursive;
@@ -42,13 +42,39 @@ ul{
     list-style-type: none;
 }
 
+h1{
+    font-family: var(--Lexend);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var(--Lexend);
+}
+
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem; 
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+span{
+    font-family: var(--Abel);
+}
+
 /*-----------x--------Global Classes-------x---------*/
 
 .nav{
     background: #fff;
     padding: 0 2rem;
     height: 0;
-    min-height: 10vh;
+    min-height: 11.5vh;
     overflow-x: hidden;
     transition: height 1s ease-in-out;
 }
@@ -120,7 +146,102 @@ ul{
     color: #a1c4cf;;
 }
 
-/*-------x------navbar----x----------*/
+/*-------x--------navbar----x------------*/
+
+/*--------------Site title---------------*/
+
+main .site-title{
+    background: url('../assets/Background-image.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--white);
+}
+
+main .site-title h1,h3{
+    margin: .3rem;
+}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background:var(--sky);
+
+}
+
+main .site-title .btn:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+/*-------x------Site title-------x-------*/
+
+/*--------------Blog Carousel------------*/
+main .blog{
+    background: url(../assets/Abract01.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    background-size: 65%;
+}
+
+main .blog .blog-post{
+    padding-top: 6rem;
+}
+
+main .blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow:0 15px 20px rgba(0,0,0,0.2);
+}
+
+main .blog-content .blog-title{
+    padding: 2rem 0;
+}
+
+main .blog-content .btn-blog{
+    padding: .7rem 2rem;
+    background: var(--sky);
+    margin: .5rem;
+}
+
+main .blog-content span{
+    display: block;
+}
+
+section .container .owl-nav{
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next{
+    color: var(--text-gray);
+    background: transparent;
+    font-size: 2rem;
+}
+
+.owl-theme .owl-nav[class*='owl-']{
+    outline: none;
+}
+
+.owl-theme .owl-nav[class*='owl-']:hover{
+    background: transparent;
+    color: var(--midnight);
+}
+/*-------x------Blog Carousel----x-------*/
 
 /*viewport less  then or equal to 750px*/
 
