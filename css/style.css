@@ -328,6 +328,46 @@ main .site-content .post-content .post-title .post-btn{
 
 /*-------x------Site Content----x-------*/
 
+/*--------------Sidebar----------------*/
+.site-content > .sidebar .category-list{
+    font-family: var(--Livvic);
+}
+
+.site-content > .sidebar .category-list .list-items{
+    background: var(--sky);
+    padding: .4rem 1rem;
+    margin: .8rem 0;
+    border-radius: 3rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-content > .sidebar .category-list a{
+    color: black;
+}
+
+.site-content .sidebar .popular-post .post-content{
+    padding-bottom: 1rem 0;
+}
+
+.site-content .sidebar .popular-post h2{
+    padding-top: 8rem;
+}
+
+.site-content .sidebar .popular-post .post-info{
+    padding:.4rem .1rem !important;
+    bottom: 0rem !important;
+    left: .5rem !important;
+    border-radius: 0rem !important;
+    background: white !important;
+}
+
+.site-content .sidebar .popular-post .post-title a{
+    font-size: 1rem;
+}
+
+/*-------x------Sidebar---------x------*/
 
 /*viewport less  then or equal to 750px*/
 
